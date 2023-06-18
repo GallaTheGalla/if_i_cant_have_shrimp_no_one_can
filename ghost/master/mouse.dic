@@ -21,7 +21,6 @@ OnMouseMove
 		if stroke % 40 == 0
 		{
 			if reference3 == 0; OnMouseMove.Sakura
-			else; OnMouseMove.Kero
 		}
 	}
 }
