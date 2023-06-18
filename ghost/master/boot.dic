@@ -9,7 +9,7 @@ OnFirstBoot
 OnFirstBoot.Talk
 {
 	"\0\s[4]SHRIMP CHIPS NOW."
-	"\0\s[0]AAAAAAAAAAAAAAAAAAAAA"
+	"\0\s[0]AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(regsize)%(small)%(small)AAAAAAAAAAAAAAAAAAAAA"
 	"\0\s[1]WHO DO YOU THINK YOU ARE, WALKING IN HERE LIKE YOU OWN THE PLACE!? YOU DON'T! I DO! THIS IS MY PLACE!"
 	"\0\s[0]DON'T EVEN THINK ABOUT TOUCHING MY FEET, YOU FOOT TOUCHER."
 }
@@ -26,13 +26,18 @@ OnBoot
 {
 	"\1\s[-1]\0\s[0]"
 	--
-	"dialogue here"
+	"WHERE ARE MY SHRIMP CHIPS!?"
+	"NOT THIS AGAIN."
+	"OH, YUCK."
+	"WHO ARE YOU AGAIN?"
 }
 
 OnClose
 {
-	"\0\s[0]Farewell."
-	"\0\s[0]Goodbye."
+	"\0\s[0]BYE."
+	"\0\s[1]FINALLY."
+	"\0\s[0]I'VE DREAMED OF THIS MOMENT."
+	"\0\s[0]LEAVE? \s[3]%(big)LEAVE!? \s[4]%(big)YOU CAN'T MAKE ME LEAVE, I MAKE ME LEAVE!"
 	--
 	"\w8\w8\-"
 }
