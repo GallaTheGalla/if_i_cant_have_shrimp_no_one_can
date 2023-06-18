@@ -1,15 +1,14 @@
 charset,UTF-8
 
-name,Simplicity Template
+name,If I Can't Have Shrimp No One Can
 type,ghost
 
 shiori,yaya.dll
 
-craftman,
-craftmanurl,
+craftman,Galehaut & Galla & Zichqec
+craftmanurl,https://github.com/GallaTheGalla/if_i_cant_have_shrimp_no_one_can
 
-sakura.name,
-kero.name,
+sakura.name,Mean Flamingo
 
 icon,icon.ico
 
