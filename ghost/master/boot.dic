@@ -1,11 +1,9 @@
 OnFirstBoot
 {
-	//If you add variables, make sure to initialize them here!
-	//Note - I haven't added anything about username or pronouns here because it's all handled by the SSP prefs
 	stroke = 0
 	LastTalk = ""
 	
-	"\![raise,OnFirstBoot.Talk]"
+	"\1\s[-1]\![raise,OnFirstBoot.Talk]"
 }
 
 OnFirstBoot.Talk
@@ -17,14 +15,7 @@ OnFirstBoot.Talk
 }
 
 OnInitialize
-{
-	//If you want some variables to reset on boot, put them here. This event will happen even if you add other events like OnGhostChanged
-	//OnInitialize is a NOTIFY event! That means it cannot return scripts. This event is only meant for things like variable changes. See this page on Ukadoc for more info: https://ukagakadreamteam.github.io/ukadoc/manual/spec_shiori3.html
-	
-	//If you add new variables in updates, I recommend initializing them like so:
-	//if !ISVAR("NewVariable"); NewVariable = 0
-	//This means that it will only set the new variable if the user doesn't already have it, so that their variables don't get overwritten
-	
+{	
 	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
 	{
 		LastTalk = ""
@@ -33,25 +24,9 @@ OnInitialize
 
 OnBoot
 {
-	_temp = SHIORI3FW.UserBirthday
-	_user_birthday = "%(_temp[1])/%(_temp[2])" //M/D, if you want it D/M you can switch it around
-	_today = "%(month)/%(day)" //Again, switch this around if using D/M
-	
-	"\1\s[10]\0\s[0]"
+	"\1\s[-1]\0\s[0]"
 	--
-	if _today == _user_birthday
-	{
-		"\0\s[0]It is %(username)'s birthday today.\w8 Happy birthday, %(username).\w8 Developer,\w4 you can add an interesting message here.\w8 It can be as long as you like.\w8 Or, you can remove it entirely."
-	}
-	elseif _today == "1/1" //You can add whatever cool dates you want with more elseifs here
-	{
-		"\0\s[0]It's new year's day.\w8 Happy %(year),\w4 %(username)."
-	}
-	else //Normal boot
-	{
-		"\0\s[0]Hello %(username).\w8 Good to see you."
-		"\0\s[0]Hello.\w8 Ready to make something cool?"
-	}
+	"dialogue here"
 }
 
 OnClose
@@ -59,5 +34,5 @@ OnClose
 	"\0\s[0]Farewell."
 	"\0\s[0]Goodbye."
 	--
-	"\w8\w8\-" //This is what makes the ghost close (after a short pause), do not remove the \- , and MAKE SURE you don't use a \e before this point or it won't work
+	"\w8\w8\-"
 }

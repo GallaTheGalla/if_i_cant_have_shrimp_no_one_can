@@ -9,10 +9,6 @@ OnMouseDoubleClick
 		{
 			OnSakuraMenu
 		}
-		else
-		{
-			OnKeroMenu
-		}
 	}
 }
 
@@ -35,14 +31,6 @@ OnMouseMove.Sakura
 	if reference4 == "head"
 	{
 		"\0\s[0]Petting??"
-	}
-}
-
-OnMouseMove.Kero
-{
-	if reference4 == "head"
-	{
-		"\1\s[10]Petting..."
 	}
 }
 
