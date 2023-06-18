@@ -8,9 +8,15 @@ OnSakuraMenu : all
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
 	"\n\n"
 	
+	"\![*]\q[Empty my recycle bin,OnTrash]\n"
+	"\![*]\q[Open my calendar,OnCalendar]\n"
+	"\![*]\q[Check the weather,OnWeather]\n"
+	"\![*]\q[Send a bug report,OnBugReport]\n"
+	"\n"
 	
-	
-	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
+	"\![*]\q[Change colors,OnChangeColors]\n"
+	"\![*]\q[Change talk rate,OnTalkRate]\n"
+	"\n"
 	
 	"\![*]\q[Nevermind,OnNevermind]"	
 }
@@ -35,7 +41,37 @@ OnLastTalkActual
 	"YOU DIDN'T!? I SAID %(LastTalk)"
 }
 
-OnTalkRateMenu
+OnSorry
+{
+	
+}
+
+OnTrash
+{
+	"\0\s[1]TAKE OUT YOUR OWN TRASH, YOU NASTY"
+}
+
+OnCalendar
+{
+	
+}
+
+OnWeather
+{
+	
+}
+
+OnBugReport
+{
+	"\0\s[1]I DON'T HAVE ANY BUGS, I'M FLAWLESS!!!"
+}
+
+OnChangeColors
+{
+	"\0\s[1]WHAT, DO I LOOK LIKE A SQUID TO YOU!? I'M A FLAMINGO! FLA-MIN-GO!!!"
+}
+
+OnTalkRate
 {
 	
 }
