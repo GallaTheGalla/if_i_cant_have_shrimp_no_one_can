@@ -2,6 +2,7 @@ OnFirstBoot
 {
 	stroke = 0
 	LastTalk = ""
+	aitalkinterval = 180
 	
 	"\1\s[-1]\![raise,OnFirstBoot.Talk]"
 }
@@ -19,6 +20,7 @@ OnInitialize
 	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
 	{
 		LastTalk = ""
+		aitalkinterval = 180
 	}
 }
 

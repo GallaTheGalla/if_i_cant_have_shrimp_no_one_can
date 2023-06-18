@@ -2,7 +2,9 @@ OnAiTalk
 {
 	if CHAIN.IDName == ""
 	{
-		LastTalk = RandomTalk
+		if angrylevel == "min"; LastTalk = MinAngryTalk
+		elseif angrylevel == "max"; LastTalk = MaxAngryTalk
+		else; LastTalk = MidAngryTalk
 	}
 	else
 	{
@@ -11,7 +13,17 @@ OnAiTalk
 	LastTalk
 }
 
-RandomTalk : nonoverlap_pool
+MaxAngryTalk : nonoverlap_pool
 {
 	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+}
+
+MidAngryTalk : nonoverlap_pool
+{
+	"mid angry"
+}
+
+MinAngryTalk : nonoverlap_pool
+{
+	"flamingo noises"
 }

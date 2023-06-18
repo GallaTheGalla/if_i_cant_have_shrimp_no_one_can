@@ -1,55 +1,33 @@
-SakuraMenuGreetings : nonoverlap
-{
-	"Hello."
-	"How can I help you?"
-}
-
-//Because there is an all modifier here, you don't need to write -- between menu options
 OnSakuraMenu : all
 {
-	"\0\s[0]\b2\![set,autoscroll,disable]"
-	if SHIORI3FW.Eventid == "OnMouseDoubleClick"; SakuraMenuGreetings //The check here is so they won't comment if you click the back button. Remove if you prefer
+	"\0%(idle)\b2\![set,autoscroll,disable]"
 	
 	"\n\n\_q"
 	
-	"\![*]\q[Talk to me,OnAiTalk]"
+	"\![*]\q[Talk to me,OnTalk]"
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
 	"\n\n"
 	
 	"\![*]\q[Change talk rate,OnTalkRateMenu]\n\n"
 	
-	"\![*]\q[Nevermind,blank]"	
+	"\![*]\q[Nevermind,OnNevermind]"	
+}
+
+OnTalk
+{
+	"\0\s[1]I DON'T TALK WHEN YOU SAY SO, I TALK WHEN I SAY SO"
 }
 
 OnLastTalk
 {
-	LastTalk
+	"\0\s[1]HOW ABOUT YOU TRY LISTENING THE FIRST TIME, HUH!?"
+	--
+	"\n\n"
+	"\![*]\q[I really didn't hear you though...,OnLastTalkActual]  \![*]\q[Sorry,OnSorry]"
 }
 
-OnTalkRateMenu : all
-{	
-	//This is just setting up a label, you may need to add to it or tweak it if you change what rates are available
-	_talkrate = "Off"
-	if aitalkinterval == 30; _talkrate = "30 seconds"
-	elseif aitalkinterval == 60; _talkrate = "1 minute"
-	elseif aitalkinterval == 180; _talkrate = "3 minutes"
-	elseif aitalkinterval == 300; _talkrate = "5 minutes"
-	elseif aitalkinterval == 600; _talkrate = "10 minutes"
-	
-	"\0\s[0]\b2\![set,autoscroll,disable]\_q"
-	"Current interval: %(_talkrate)\n\n"
-	
-	"\![*]\q[Off,OnTalkRateChange,0]\n"
-	"\![*]\q[30 seconds,OnTalkRateChange,30]\n"
-	"\![*]\q[1 minute,OnTalkRateChange,60]\n"
-	"\![*]\q[3 minutes,OnTalkRateChange,180]\n"
-	"\![*]\q[5 minutes,OnTalkRateChange,300]\n"
-	"\![*]\q[10 minutes,OnTalkRateChange,600]\n"
-	"\n"
-	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Nevermind,blank]"
-}
-
-OnTalkRateChange
+OnLastTalkActual
 {
-	aitalkinterval = TOINT(reference0)
+	LastTalk = "%(big)" + LastTalk
+	"YOU DIDN'T!? I SAID %(LastTalk)"
 }

@@ -14,26 +14,35 @@ OnMouseDoubleClick
 
 OnMouseMove
 {
-	if reference4 != ""
+	if reference4 == "head" && reference3 == 0
 	{
 		stroke++
 		
 		if stroke % 40 == 0
 		{
-			if reference3 == 0; OnMouseMove.Sakura
+			if reference3 == 0; OnPet
 		}
 	}
 }
 
-OnMouseMove.Sakura
+OnPet
 {
-	if reference4 == "head"
-	{
-		"\0\s[0]Petting??"
-	}
+	if stroke % petrequire == 0; aitalkinterval += 30
+	
+	_e = emoji
+	"\0\s[2]%(_e)  %(flamingonoises) %(_e)"
+}
+
+petrequire
+{
+	40 * 3
 }
 
 OnMouseLeaveAll
 {
+	if stroke > 40 && stroke < petrequire
+	{
+		"\0\s[1]I DIDN'T SAY YOU COULD STOP!"
+	}
 	stroke = 0
 }
