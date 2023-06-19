@@ -30,7 +30,7 @@ OnLastTalk
 {
 	"\0\s[1]HOW ABOUT YOU TRY LISTENING THE FIRST TIME, HUH!?"
 	--
-	"\n\n"
+	"\n\n\_q"
 	--
 	"\![*]\q[I really didn't hear you though...,OnLastTalkActual]  \![*]\q[Sorry,OnSorry]"
 }
