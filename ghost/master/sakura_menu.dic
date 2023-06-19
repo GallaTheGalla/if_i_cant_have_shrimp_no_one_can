@@ -44,7 +44,7 @@ OnLastTalkActual
 
 OnSorry
 {
-	
+	"\0\b[0]\s[2]as you should be. i forgive you."
 }
 
 OnTrash
@@ -54,7 +54,7 @@ OnTrash
 
 OnCalendar
 {
-	
+	"\0\b[4]\s[3]WHY WOULD I CARE WHAT YOUR SCHEDULE IS LIKE!? YOUR SCHEDULE IS YOUR BUSINESS, MY SCHEDULE IS MY BUSINESS."
 }
 
 OnWeather
