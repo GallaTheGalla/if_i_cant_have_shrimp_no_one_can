@@ -44,7 +44,7 @@ OnLastTalkActual
 
 OnSorry
 {
-	"\0\b[0]\s[2]as you should be. i forgive you."
+	"\0\b[0]\s[2]As you should be.\w8\w8\w8\n\nI forgive you."
 }
 
 OnTrash
@@ -59,7 +59,7 @@ OnCalendar
 
 OnWeather
 {
-	
+	"\0\b[0]\s[1]I HOPE IT %(rains). JUST FOR YOU."
 }
 
 OnBugReport
@@ -74,12 +74,12 @@ OnChangeColors
 
 OnTalkRate
 {
-	
+	"\0\b[2]\s[3]YOU DON'T %(bold)GET%(boldoff) TO TELL %(bold)ME%(boldoff) WHEN TO TALK!"
 }
 
 OnNevermind
 {
-	
+	"\0\b[0]\s[1]GOOD. GREAT. I LOVE BEING BOTHERED FOR NO REASON. IT'S MY FAAA%(bold)AAA%(boldoff)%(big)AAA%(bold)AAA%(boldoff)%(big)AAA%(bold)AAA%(boldoff)%(small)%(small)AAAVORITE THING."
 }
 
 OnBalloonMenu : all
