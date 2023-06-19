@@ -19,6 +19,13 @@ OnTranslate
 		_talk = REPLACE(_talk,"~ ","~\w8 ")
 	}
 	
+	if DefaultBalloon //every time galla, every time!
+	{
+		_talk = REPLACE(_talk,"\0\b[0]","\0\b[%(BalloonColor)0]")
+		_talk = REPLACE(_talk,"\0\b[2]","\0\b[%(BalloonColor)2]")
+		_talk = REPLACE(_talk,"\0\b[4]","\0\b[%(BalloonColor)4]")
+	}
+	
 	//If you want to add anything to OnTranslate, like text replacement, I would put it after this point, generally. Just make sure it's before the TOSTR(_talk)
 	
 	TOSTR(_talk)
@@ -40,7 +47,7 @@ OnKeyPress
 
 RemoteTalk
 {
-	"\0\s[1]WHAT DO I LOOK LIKE, A REMOTE CONTROL!?"
+	"\0\b[0]\s[1]WHAT DO I LOOK LIKE, A REMOTE CONTROL!?"
 }
 
 //Happens about 30 seconds after a script ends, by default, to bring them back to normal poses
@@ -92,7 +99,24 @@ OnMinuteChange
 	if aitalkinterval < 30; aitalkinterval = 30
 }
 
+//[character ID, category name, part name, option, on-1/off-0, thumbnail path]
+OnNotifyDressupInfo
+{
+	CurrentColor = ""
+	AvailableColors = IARRAY
+	
+	foreach reference; _ref
+	{
+		_ref = SPLIT(_ref,C_BYTE1)
+		if _ref[1] == "Color" && _ref[4] == 1; CurrentColor = _ref[2]
+		if _ref[1] == "Color"; AvailableColors ,= _ref[2]
+	}
+}
 
+DefaultBalloon
+{
+	SHIORI3FW.BalloonName == "Tropical Plastic"
+}
 
 
 //—————————————————————————————— Right click menu links ——————————————————————————————

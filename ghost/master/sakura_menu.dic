@@ -1,8 +1,8 @@
 OnSakuraMenu : all
 {
-	"\0%(idle)\b2\![set,autoscroll,disable]"
+	"\0\b[2]%(idle)\![set,autoscroll,disable]"
 	
-	"\n\n\_q"
+	"\_q"
 	
 	"\![*]\q[Talk to me,OnTalk]"
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
@@ -18,17 +18,21 @@ OnSakuraMenu : all
 	"\![*]\q[Change talk rate,OnTalkRate]\n"
 	"\n"
 	
-	"\![*]\q[Nevermind,OnNevermind]"	
+	"\![*]\q[Nevermind,OnNevermind]"
+	
+	if SHIORI3FW.DebugMode; "\n\n%(aitalkinterval)/%(angrylevel)"
+	
+	if DefaultBalloon; "\_l[0,0]\f[align,right]\__q[OnBalloonMenu]%(emoji)\__q"
 }
 
 OnTalk
 {
-	"\0\s[1]I DON'T TALK WHEN YOU SAY SO, I TALK WHEN I SAY SO"
+	"\0\b[0]\s[1]I DON'T TALK WHEN YOU SAY SO, I TALK WHEN I SAY SO"
 }
 
 OnLastTalk
 {
-	"\0\s[1]HOW ABOUT YOU TRY LISTENING THE FIRST TIME, HUH!?"
+	"\0\b[0]\s[1]HOW ABOUT YOU TRY LISTENING THE FIRST TIME, HUH!?"
 	--
 	"\n\n\_q"
 	--
@@ -38,7 +42,7 @@ OnLastTalk
 OnLastTalkActual
 {
 	LastTalk = "%(big)" + LastTalk
-	"YOU DIDN'T!? I SAID %(LastTalk)"
+	"\0\b[0]\s[1]YOU DIDN'T!? I SAID %(LastTalk)"
 }
 
 OnSorry
@@ -48,7 +52,7 @@ OnSorry
 
 OnTrash
 {
-	"\0\s[1]TAKE OUT YOUR OWN TRASH, YOU NASTY"
+	"\0\b[0]\s[1]TAKE OUT YOUR OWN TRASH, YOU NASTY"
 }
 
 OnCalendar
@@ -63,12 +67,12 @@ OnWeather
 
 OnBugReport
 {
-	"\0\s[1]I DON'T HAVE ANY BUGS, I'M FLAWLESS!!!"
+	"\0\b[0]\s[1]I DON'T HAVE ANY BUGS, I'M FLAWLESS!!!"
 }
 
 OnChangeColors
 {
-	"\0\s[1]WHAT, DO I LOOK LIKE A SQUID TO YOU!? I'M A FLAMINGO! FLA-MIN-GO!!!"
+	"\0\b[0]\s[1]WHAT, DO I LOOK LIKE A SQUID TO YOU!? \s[3]I'M A FLAMINGO! \s[4]FLA-\w4MIN-\w4GO!!!"
 }
 
 OnTalkRate
@@ -79,4 +83,21 @@ OnTalkRate
 OnNevermind
 {
 	
+}
+
+OnBalloonMenu : all
+{
+	if reference0 != ""; BalloonColor = reference0
+	_balloons = ("Pink,0","Black,1","White,2")
+	
+	"\C\![lock,balloonrepaint]\c\0\b[0]%(idle)\![set,autoscroll,disable]\_q"
+	
+	foreach _balloons; _balloon
+	{
+		if TOINT(_balloon[1]) == BalloonColor; "\![*]"
+		"\q[%(_balloon[0]),OnBalloonMenu,%(_balloon[1])]\n"
+	}
+	
+	"\n"
+	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Close,OnBlank]\![unlock,balloonrepaint]"
 }

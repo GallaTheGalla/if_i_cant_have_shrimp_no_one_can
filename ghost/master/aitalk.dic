@@ -15,67 +15,81 @@ OnAiTalk
 
 MaxAngryTalk : nonoverlap_pool
 {
-	"\0\s[1]AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-	"\0\s[4]I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(small)MUSIC."
-	"\0\s[4]I'M GONNA TREAT YOUR FINGERS LIKE SHRIMP."
-	"\0\s[1]I'M STEPPING ON YOU, I'M STOMPING ON YOU, I'M SQUASHING YOU FLAT."
-	"\0\s[4]CAN THIS PLACE BE %(italic)ANY%(italicoff) MORE %(climate)!?"
-	"\0\s[4]WHAT %(italic)IS%(italicoff) THAT ON YOUR FACE?"
-	"\0\s[4]HELLOOOOOOOOOO???"
-	"\0\s[4]I'M %(big)STANDING%(small) OVER HERE, MAKE YOURSELF %(big)USEFUL"
-	"\0\s[1]GET YOUR PRIORITIES IN ORDER, THIS IS %(big)%(big)UNACCEPTABLE."
-	"\0\s[4]WHAT'S THE HOLDUP???"
-	"\0\s[4]I'M %(big)%(big)WAITING!!!"
-	"\0\s[1]I'M GOING TO GET %(flamfood) TO EAT IN FRONT OF YOU. I'M GOING TO WATCH YOU GO HUNGRY WHILE I HAVE A %(bold)DELICIOUS SNACK. %(boldoff)I'M GOING TO LAUGH WHEN YOUR EYES FILL WITH JEALOUSY AND MISERY AS I ENJOY THE FINER THINGS IN LIFE WHILE YOU %(bold)STARVE."
-	"\0\s[1]I CAN'T BELIEVE THE TREATMENT I'M GETTING. HERE I AM WITH MY OVERWHELMING RADIANCE, AND WHAT ARE YOU DOING ABOUT IT!? %(bold)%(big)NOTHING!"
-	"\0\s[4]EXCUSE ME! HELLO!\w8\w8\w8 %(bold)%(big)%(big)HELLO!?\w8\w8\w8\w8 %(small)%(small)%(boldoff)\n\n%(small)\s[1]UNFORGIVEABLE."
-	"\0\s[4]IF YOU'RE NOT GOING TO PAY ATTENTION TO ME, I HAVE BETTER PLACES TO BE THAT ARE LESS %(climate)"
-	"\0\s[4]IS THIS REALLY ALL YOU HAVE TO OFFER ME?"
-	"\0\s[4]TURN IT DOWN I'M TRYING TO EAT %(flamfood) HERE"
-	"\0\s[1]LOOK INTO MY EYES. \w8\w8\s[4]%(big)CLOSER. \w8\w8\w8\w8%(big)CLOSER. \w8\w8\w8\w8\w8\n\n%(small)%(small)%(small)%(bold)FEED ME %(flamfood)"
+	"\0\b[0]\s[1]AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	"\0\b[0]\s[4]I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(small)MUSIC."
+	"\0\b[0]\s[4]I'M GONNA TREAT YOUR FINGERS LIKE SHRIMP."
+	"\0\b[0]\s[1]I'M STEPPING ON YOU, I'M STOMPING ON YOU, I'M SQUASHING YOU FLAT."
+	"\0\b[0]\s[4]CAN THIS PLACE BE %(italic)ANY%(italicoff) MORE %(climate)!?"
+	"\0\b[0]\s[4]WHAT %(italic)IS%(italicoff) THAT ON YOUR FACE?"
+	"\0\b[0]\s[4]HELLOOOOOOOOOO???"
+	"\0\b[0]\s[4]I'M %(big)STANDING%(small) OVER HERE, MAKE YOURSELF %(big)USEFUL"
+	"\0\b[0]\s[1]GET YOUR PRIORITIES IN ORDER, THIS IS %(big)%(big)UNACCEPTABLE."
+	"\0\b[0]\s[4]WHAT'S THE HOLDUP???"
+	"\0\b[0]\s[4]I'M %(big)%(big)WAITING!!!"
+	"\0\b[0]\s[1]I'M GOING TO GET %(flamfood) TO EAT IN FRONT OF YOU. I'M GOING TO WATCH YOU GO HUNGRY WHILE I HAVE A %(bold)DELICIOUS SNACK. %(boldoff)I'M GOING TO LAUGH WHEN YOUR EYES FILL WITH JEALOUSY AND MISERY AS I ENJOY THE FINER THINGS IN LIFE WHILE YOU %(bold)STARVE."
+	"\0\b[0]\s[1]I CAN'T BELIEVE THE TREATMENT I'M GETTING. HERE I AM WITH MY OVERWHELMING RADIANCE, AND WHAT ARE YOU DOING ABOUT IT!? %(bold)%(big)NOTHING!"
+	"\0\b[0]\s[4]EXCUSE ME! HELLO!\w8\w8\w8 %(bold)%(big)%(big)HELLO!?\w8\w8\w8\w8 %(small)%(small)%(boldoff)\n\n%(small)\s[1]UNBELIEVEABLE."
+	"\0\b[0]\s[4]IF YOU'RE NOT GOING TO PAY ATTENTION TO ME, I HAVE BETTER PLACES TO BE THAT ARE LESS %(climate)"
+	"\0\b[0]\s[4]IS THIS REALLY ALL YOU HAVE TO OFFER ME?"
+	"\0\b[0]\s[1]TURN IT DOWN I'M TRYING TO EAT %(flamfood) HERE"
+	"\0\b[0]\s[0]LOOK INTO MY EYES. \w8\w8\s[1]%(big)CLOSER. \w8\w8\w8\s[4]%(big)CLOSER. \w8\w8\w8\w8\w8\n\n%(small)%(small)%(small)%(bold)FEED ME %(flamfood)"
+	"\0\b[0]\s[1]GOT ANY OF THOSE COMPLIMENTARY SNACKS AROUND HERE? HOW ABOUT %(flamfood)?"
+	"\0\b[0]\s[1]THIS IS THE WORST PARTY I'VE EVER BEEN TO. I WAS PROMISED %flamfood, AND IF I DON'T GET %[0] I'M LEAVING!!"
+	"\0\b[0]\s[1]I'M GOING TO SUE YOU FOR %(suefor)."
+	"\0\b[0]\s[1]MY ILLUSTRIOUS FEATHERED FORM IS WASTED ON YOU."
+	"\0\b[0]\s[1]STANDS HERE. SCRATCHES THE GROUND. FOAMS AT THE MOUTH. \w8\w8\s[4]%(bold)WONDERS WHAT YOU'RE WAITING FOR."
+	"\0\b[0]\s[4]%(big)%(big)%(big)%(big)%(big)%(bold)\![set,balloonwait,2.5]Y A A A A A W N"
+	"\0\b[0]\s[3]LOOK AT ME. \w8\w8\w8%(big)\s[4]LOOK AT ME!!!"
+	"\0\b[0]\s[3]HEY YOU. HEY YOU. HEY YOU. HEY YOU!!!"
+	"\0\b[0]\s[3]STAY AWAY FROM MY %(flamfood('my'))! \s[4]DO YOU HEAR ME!?"
 }
 
 MidAngryTalk : nonoverlap_pool
 {
-	"\0\s[1]EATS %(flamfood). \n\nNO, YOU CAN'T HAVE ANY!"
-	"\0\s[1]I BET YOU WISH YOU HAD %(flampart) LIKE THIS."
-	"\0\s[1]GOT ANY GAMES ON YOUR PHONE?"
-	"\0\s[1]IT'S TOO %(climate) IN HERE!"
-	"\0\s[0]BEING ABLE TO CLOSE YOUR MOUTH IS A DESIGN FLAW."
-	"\0\s[0]I'M SO BURPY."
-	"\0\s[4]GET A TATTOO OF MY FACE."
-	"\0\s[0]DO YOU THINK I CAN PULL OFF A JEAN JACKET?"
+	"\0\b[0]\s[1]EATS %(flamfood). \n\nNO, YOU CAN'T HAVE ANY!"
+	"\0\b[0]\s[1]I BET YOU WISH YOU HAD %(flampart) LIKE THIS."
+	"\0\b[0]\s[1]GOT ANY GAMES ON YOUR PHONE?"
+	"\0\b[0]\s[1]IT'S TOO %(climate) IN HERE!"
+	"\0\b[0]\s[0]BEING ABLE TO CLOSE YOUR MOUTH IS A DESIGN FLAW."
+	"\0\b[0]\s[0]I'M SO BURPY."
+	"\0\b[0]\s[4]GET A TATTOO OF MY FACE."
+	"\0\b[0]\s[0]DO YOU THINK I CAN PULL OFF A JEAN JACKET?"
+	"\0\b[0]\s[0]I COULD REALLY GO FOR %(flamfood) RIGHT NOW. \w8\w8\s[1]\n\n%(bold)HINT HINT."
+	"\0\b[0]\s[0]MY FLAMBOYANCE INCLUDES ME, MYSELF, AND I"
+	"\0\b[0]\s[0]I THINK A SECOND HEAD WOULD BE AN IMPROVEMENT ON ME, \s[1]BUT I HATE SHARING MY %(flamfood('my'))."
+	"\0\b[0]\s[1]I'M GONNA PAINT YOU %(paint) TO MAKE YOU MORE TOLERABLE"
+	"\0\b[0]\s[0]PUTS YOU IN A JAR"
 	
-	if !FlamingoDay && !MentionedFlamingoDay; "\0\s[1]WHAT DO YOU MEAN IT'S NOT FLAMINGO DAY\![raise,OnMentionedFlamingoDay]"
+	if !FlamingoDay && !MentionedFlamingoDay; "\0\b[0]\s[1]WHAT DO YOU MEAN IT'S NOT FLAMINGO DAY\![raise,OnMentionedFlamingoDay]"
 	
-	"\0\s[0]ONE FEATHER.\e:chain=feathercounting"
-	"\0\s[0]HEY.\e:chain=attentionseeking"
+	"\0\b[0]\s[0]ONE FEATHER.\e:chain=feathercounting"
+	"\0\b[0]\s[0]HEY.\e:chain=attentionseeking"
 }
 
 MinAngryTalk : nonoverlap_pool
 {
-	"\0\s[2]flamingo noises"
+	"\0\b[0]\s[2]flamingo noises"
 }
 
 
 
 feathercounting
 {{CHAIN
-	"\0\s[0]TWO FEATHERS."
-	"\0\s[0]THREE FEATHERS."
-	"\0\s[0]FOUR FEATHERS."
-	"\0\s[0]FIVE FEATHERS."
-	"\0\s[0]SIX FEATHERS."
-	"\0\s[0]SEVEN FEATHERS."
-	"\0\s[1]STOP LOOKING AT MY FEATHERS!\e:chain=end"
+	"\0\b[0]\s[0]TWO FEATHERS."
+	"\0\b[0]\s[0]THREE FEATHERS."
+	"\0\b[0]\s[0]FOUR FEATHERS."
+	"\0\b[0]\s[0]FIVE FEATHERS."
+	"\0\b[0]\s[0]SIX FEATHERS."
+	"\0\b[0]\s[0]SEVEN FEATHERS."
+	"\0\b[0]\s[1]STOP LOOKING AT MY FEATHERS!\e:chain=end"
 }}CHAIN
 
 attentionseeking
 {{CHAIN
-	"\0\s[1]%(big)HEY."
-	"\0\s[3]%(big)%(big)HEY!"
-	"\0\s[4]%(big)%(big)%(big)HEY!!!"
-	"\0\s[1]PET ME.\e:chain=end"
+	"\0\b[0]\s[1]%(big)HEY."
+	"\0\b[0]\s[3]%(big)%(big)HEY!"
+	"\0\b[0]\s[4]%(big)%(big)%(big)HEY!!!"
+	"\0\b[0]\s[1]PET ME.\e:chain=end"
 }}CHAIN
 
 OnMentionedFlamingoDay
