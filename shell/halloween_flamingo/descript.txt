@@ -1,7 +1,7 @@
 charset,UTF-8
 type,shell
 
-name,Normal Flamingo
+name,Halloween Flamingo
 craftman,Galehaut
 craftmanurl,https://www.tumblr.com/blog/aegisghosts
 
@@ -11,10 +11,8 @@ seriko.use_self_alpha,1
 sakura.bindoption100.group,Color,mustselect
 sakura.bindgroup100.default,1
 
-sakura.bindgroup100.name,Color,Pink
-sakura.bindgroup101.name,Color,White
-sakura.bindgroup102.name,Color,Black
-sakura.bindgroup103.name,Color,Blue
-sakura.bindgroup104.name,Color,Purple
+sakura.bindgroup100.name,Color,Green
+sakura.bindgroup101.name,Color,Blue
+sakura.bindgroup102.name,Color,Pink
 
 sakura.menu,auto

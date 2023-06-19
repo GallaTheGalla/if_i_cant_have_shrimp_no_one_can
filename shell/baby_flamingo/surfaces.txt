@@ -1,0 +1,99 @@
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	collisionex0,head,region,collision0.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,0,0,0,0
+	
+	animation501.interval,bind
+	animation501.pattern0,overlay,10,0,0,0
+	
+	animation502.interval,bind
+	animation502.pattern0,overlay,20,0,0,0
+	
+	animation503.interval,bind
+	animation503.pattern0,overlay,30,0,0,0
+}
+
+surface1
+{
+	collisionex0,head,region,collision1.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,1,0,0,0
+	
+	animation501.interval,bind
+	animation501.pattern0,overlay,11,0,0,0
+	
+	animation502.interval,bind
+	animation502.pattern0,overlay,21,0,0,0
+	
+	animation503.interval,bind
+	animation503.pattern0,overlay,31,0,0,0
+}
+
+surface2
+{
+	collisionex0,head,region,collision2.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,2,0,0,0
+	
+	animation501.interval,bind
+	animation501.pattern0,overlay,12,0,0,0
+	
+	animation502.interval,bind
+	animation502.pattern0,overlay,22,0,0,0
+	
+	animation503.interval,bind
+	animation503.pattern0,overlay,32,0,0,0
+}
+
+surface3
+{
+	collisionex0,head,region,collision3.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,3,0,0,0
+	
+	animation501.interval,bind
+	animation501.pattern0,overlay,13,0,0,0
+	
+	animation502.interval,bind
+	animation502.pattern0,overlay,23,0,0,0
+	
+	animation503.interval,bind
+	animation503.pattern0,overlay,33,0,0,0
+}
+
+surface4
+{
+	collisionex0,head,region,collision4.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,4,0,0,0
+	
+	animation501.interval,bind
+	animation501.pattern0,overlay,14,0,0,0
+	
+	animation502.interval,bind
+	animation502.pattern0,overlay,24,0,0,0
+	
+	animation503.interval,bind
+	animation503.pattern0,overlay,34,0,0,0
+}
+
+
+//—————————————————————————————— Kero surfaces ——————————————————————————————
+
+surface9
+{
+	
+}

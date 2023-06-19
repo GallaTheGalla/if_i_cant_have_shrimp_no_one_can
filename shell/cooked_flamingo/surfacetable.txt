@@ -1,0 +1,22 @@
+charset,UTF-8
+version,1
+option,DisableNoDefineSurfaces
+
+group,Mean Flamingo
+{
+	scope,0
+	
+	0,Normal
+	1,Angry
+	2,Pet
+	3,Lean
+	4,Close
+}
+
+group,__disabled
+{
+	9,__parts
+	10,__parts
+	11,__parts
+	20,__parts
+}

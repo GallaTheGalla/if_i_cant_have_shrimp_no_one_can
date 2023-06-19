@@ -1,0 +1,24 @@
+charset,UTF-8
+type,shell
+
+name,Baby Flamingo
+craftman,Galehaut
+craftmanurl,https://www.tumblr.com/blog/aegisghosts
+
+seriko.alignmenttodesktop,bottom
+seriko.use_self_alpha,1
+
+sakura.bindoption100.group,Color,mustselect
+sakura.bindgroup100.default,1
+
+sakura.bindgroup100.name,Color,Gray
+
+sakura.bindoption100.group,Item,Multiple
+
+sakura.bindgroup501.name,Item,Bonnet
+sakura.bindgroup502.name,Item,Binky
+sakura.bindgroup503.name,Item,Rattle
+
+sakura.menuitem0,501
+sakura.menuitem1,502
+sakura.menuitem2,503

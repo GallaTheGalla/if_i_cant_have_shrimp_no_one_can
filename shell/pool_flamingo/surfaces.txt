@@ -20,9 +20,6 @@ surface0
 	
 	animation103.interval,bind
 	animation103.pattern0,replace,30,0,0,0
-	
-	animation104.interval,bind
-	animation104.pattern0,replace,40,0,0,0
 }
 
 surface1
@@ -40,9 +37,6 @@ surface1
 	
 	animation103.interval,bind
 	animation103.pattern0,replace,31,0,0,0
-	
-	animation104.interval,bind
-	animation104.pattern0,replace,41,0,0,0
 }
 
 surface2
@@ -60,9 +54,6 @@ surface2
 	
 	animation103.interval,bind
 	animation103.pattern0,replace,32,0,0,0
-	
-	animation104.interval,bind
-	animation104.pattern0,replace,42,0,0,0
 }
 
 surface3
@@ -80,9 +71,6 @@ surface3
 	
 	animation103.interval,bind
 	animation103.pattern0,replace,33,0,0,0
-	
-	animation104.interval,bind
-	animation104.pattern0,replace,43,0,0,0
 }
 
 surface4
@@ -100,9 +88,6 @@ surface4
 	
 	animation103.interval,bind
 	animation103.pattern0,replace,34,0,0,0
-	
-	animation104.interval,bind
-	animation104.pattern0,replace,44,0,0,0
 }
 
 

@@ -1,0 +1,54 @@
+descript
+{
+	version,1
+}
+
+//—————————————————————————————— Sakura surfaces ——————————————————————————————
+
+surface0
+{
+	collisionex0,head,region,collision0.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,0,0,0,0
+}
+
+surface1
+{
+	collisionex0,head,region,collision1.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,1,0,0,0
+}
+
+surface2
+{
+	collisionex0,head,region,collision2.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,2,0,0,0
+}
+
+surface3
+{
+	collisionex0,head,region,collision3.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,3,0,0,0
+}
+
+surface4
+{
+	collisionex0,head,region,collision4.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,replace,4,0,0,0
+}
+
+
+//—————————————————————————————— Kero surfaces ——————————————————————————————
+
+surface9
+{
+	
+}
