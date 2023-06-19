@@ -1,6 +1,6 @@
 OnSakuraMenu : all
 {
-	"\0\b[2]%(idle)\![set,autoscroll,disable]"
+	"\0\b[0]%(idle)\![set,autoscroll,disable]"
 	
 	"\_q"
 	

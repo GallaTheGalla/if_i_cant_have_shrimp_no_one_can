@@ -10,7 +10,7 @@ craftmanurl,https://github.com/GallaTheGalla/if_i_cant_have_shrimp_no_one_can
 
 sakura.name,MEAN FLAMINGO
 
-icon,icon.ico
+icon,shrimpcon.ico
 
 sstp.allowunspecifiedsend,0
 kero.seriko.defaultsurface,9

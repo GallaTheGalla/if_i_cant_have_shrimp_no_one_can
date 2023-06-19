@@ -260,6 +260,78 @@ insect
 	"FLY"
 }
 
+flamcolor : pool
+{
+	case CurrentColor
+	{
+		when "White"
+		{
+			"SHOCKING WHITE"
+			"SEARINGLY-BRIGHT WHITE"
+			"FLAWLESS WHITE"
+			"PERFECT WHITE"
+		}
+		when "Black"
+		{
+			"PITCH BLACK"
+			"VELVET BLACK"
+			"BLACK-SO-DEEP-YOU'LL-NEVER-LOOK-AWAY"
+			"SOPHISTICATED BLACK"
+			"MATTE BLACK"
+			"SUAVE BLACK"
+		}
+		when "Blue"
+		{
+			"SAD BLUE"
+			"LAKE BLUE"
+			"OCEAN BLUE"
+			"SEA BLUE"
+			"SKY BLUE"
+			"BLUE BLUE BLUE BLUE"
+		}
+		when "Purple"
+		{
+			"VIBRANT PURPLE"
+			"BRIGHT PURPLE"
+			"THE-VERY-BEST-PURPLE"
+			"SPLENDID PURPLE"
+		}
+		when "Green"
+		{
+			"NEON GREEN"
+			"PLASTIC GREEN"
+			"BLAZINGLY BRIGHT GREEN"
+			"UNNATURAL GREEN"
+		}
+		when "Gray"
+		{
+			"FUZZY GRAY"
+			"SOFT GRAY"
+			"SOOTHING GRAY"
+			"FLUFFY GRAY"
+		}
+		when "Well Done"
+		{
+			"STEAMING"
+			"GOLDEN BROWN"
+			"TASTY"
+			"SAVORY BROWN"
+			"DARK ORANGE"
+		}
+		others //Pink
+		{
+			"STUNNING PINK"
+			"HOT PINK"
+			"VIBRANT PINK"
+			"NEVER-PINK-ENOUGH PINK"
+			"PINKEST PINK"
+			"RADIANT PINK"
+			"IRIDESCENT PINK"
+		}
+	}
+}
+
+
 //—————————————————————————————— Formatting ——————————————————————————————
 
 big

@@ -44,6 +44,10 @@ MaxAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[3]STAY AWAY FROM MY %(flamfood('my'))! \s[4]DO YOU HEAR ME!?"
 	"\0\b[0]\s[1]YOU'RE A FIGHTER ALRIGHT, BUT I FIGHT HARDER."
 	"\0\b[0]\s[0]MAKES! %(big)MY!! %(big)VOICE!!! %(big)LOUDER!!!!"
+	"\0\b[0]\s[3]STOP MAKING THAT AWFUL NOISE"
+	"\0\b[0]\s[1]WHAT A DUMP."
+	"\0\b[0]\s[1]THERE MUST BE SOME EXPLANATION FOR THIS BEHAVIOR. \w8\w8\w8\s[4]CERTAINLY NOT A GOOD ONE."
+	"\0\b[0]\s[0]%(big)HEY%(small) DID YOU %(big)KNOW%(small) THAT %(big)SOMEONE%(small) IS %(big)WAITING ON YOU???"
 }
 
 MidAngryTalk : nonoverlap_pool
@@ -64,7 +68,14 @@ MidAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[0]STEPS ON YOUR LAWN"
 	"\0\b[0]\s[0]EXISTS IN YOUR GENERAL VICINITY"
 	"\0\b[0]\s[0]BLESSES YOU WITH MY PRESENCE"
-	"\0\b[0]\s[0]"
+	"\0\b[0]\s[0]THIS PLACE COULD DO WITH MORE %(flamcolor) DECORATIONS."
+	"\0\b[0]\s[0]WHAT'S A GOOD RESTAURANT AROUD HERE?"
+	"\0\b[0]\s[0]WHAT'S THE DEAL WITH ALL THOSE ROCKS?"
+	"\0\b[0]\s[0]DID YOU PREEN YOUR FEATHERS TODAY? \s[1]I DON'T THINK YOU DID"
+	"\0\b[0]\s[0]YOU CAN JUDGE THE QUALITY OF A PLACE BY THE QUANTITY OF SHRIMP"
+	"\0\b[0]\s[0]ALWAYS KNOW WHERE YOU CAN FIND MORE SHRIMP"
+	"\0\b[0]\s[1]WELL THAT'S JUST GREAT, THIS PLACE IS TOO %(climate) TO ENJOY MY %(flamfood('my'))"
+	"\0\b[0]\s[0]I GOT A SPORTY NEW CAR. %(flamcolor). \w8\s[1]JEALOUS, AREN'T YOU? \w8\w8WELL IT'S \s[4]%(big)MINE"
 	
 	if !FlamingoDay && !MentionedFlamingoDay; "\0\b[0]\s[1]WHAT DO YOU MEAN IT'S NOT FLAMINGO DAY\![raise,OnMentionedFlamingoDay]"
 	
@@ -74,7 +85,6 @@ MidAngryTalk : nonoverlap_pool
 
 MinAngryTalk : nonoverlap_pool
 {
-	"\0\b[0]\s[2]flamingo noises"
 	"\0\b[0]\s[2]If roses are red,\nand violets are blue,\nwhat color am i\nafter being spoiled by you?"
 	"\0\b[0]\s[2]There are limitless things to say about the color pink,\nthough few capture the totality of its splendor.\nIn a word, it is life\nthe hope\nthe reward\nthat comes when you've finally put thought to ink.\nA fire that heals,\na gently held wish\nspoken just when you feel you'd best surrender.\nThink not of the color,\nbut of the soul,\nof the art,\nof the love\nfor the color pink."
 	"\0\b[0]\s[2]There was a flamingo that glugs\nendlessly out of its mugs\ntil it had a fright\nand caused quite the sight\nfor what it had spilled was bugs!"
