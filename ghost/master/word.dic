@@ -3,7 +3,7 @@ emoji
 	
 }
 
-flamingonoises
+flamingonoises : nonoverlap
 {
 	"FLAMINGO NOISES"
 	"RUFFLES FEATHERS"
