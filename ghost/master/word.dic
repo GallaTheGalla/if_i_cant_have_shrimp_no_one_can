@@ -102,6 +102,14 @@ climate
 	"CLEAN"
 	"FOGGY"
 	"SUNNY"
+	"MUGGY"
+	"BUGGY"
+	"SHRIMP-FREE"
+	"AQUATIC"
+	"LOUD"
+	"ANNOYING"
+	"FEATHERY"
+	"DUSTY"
 }
 
 

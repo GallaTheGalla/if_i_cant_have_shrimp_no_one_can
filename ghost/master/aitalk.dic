@@ -16,7 +16,7 @@ OnAiTalk
 MaxAngryTalk : nonoverlap_pool
 {
 	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
-	"I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(regsize)MUSIC."
+	"I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(small)MUSIC."
 }
 
 MidAngryTalk : nonoverlap_pool

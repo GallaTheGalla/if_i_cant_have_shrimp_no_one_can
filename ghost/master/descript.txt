@@ -13,3 +13,4 @@ sakura.name,Mean Flamingo
 icon,icon.ico
 
 sstp.allowunspecifiedsend,0
+kero.seriko.defaultsurface,9
