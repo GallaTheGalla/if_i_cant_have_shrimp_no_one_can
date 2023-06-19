@@ -8,7 +8,7 @@ shiori,yaya.dll
 craftman,Galehaut & Galla & Zichqec
 craftmanurl,https://github.com/GallaTheGalla/if_i_cant_have_shrimp_no_one_can
 
-sakura.name,Mean Flamingo
+sakura.name,MEAN FLAMINGO
 
 icon,icon.ico
 
