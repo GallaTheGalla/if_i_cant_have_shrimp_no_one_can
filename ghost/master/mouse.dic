@@ -30,7 +30,7 @@ OnPet
 	if stroke % petrequire == 0; aitalkinterval += 30
 	
 	_e = emoji
-	"\0\s[2]%(_e)  %(flamingonoises) %(_e)"
+	"\0\s[2]%(_e) %(flamingonoises) %(_e)"
 }
 
 petrequire
