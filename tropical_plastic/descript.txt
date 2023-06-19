@@ -5,8 +5,8 @@ use_input_alpha,1
 type,balloon
 name,Tropical Plastic
 
-craftman,Galla
-craftmanw,Galla
+craftman,Galehaut & Galla
+craftmanw,Galehaut & Galla
 craftmanurl,https://gallathegalla.github.io/gtg-ghosts/
 homeurl,https://raw.githubusercontent.com/GallaTheGalla/tropical_plasic/main/
 
