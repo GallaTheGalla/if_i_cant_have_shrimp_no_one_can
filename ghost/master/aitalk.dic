@@ -81,6 +81,8 @@ MidAngryTalk : nonoverlap_pool
 	
 	"\0\b[0]\s[0]ONE FEATHER.\e:chain=feathercounting"
 	"\0\b[0]\s[0]HEY.\e:chain=attentionseeking"
+	"\0\b[0]\s[0]I'M A FLAMINGO %(emoji)\e:chain=flamingosong"
+	"\0\b[0]\s[4]LOOK AT ME!\e:chain=lookatme"
 }
 
 MinAngryTalk : nonoverlap_pool
@@ -109,6 +111,24 @@ attentionseeking
 	"\0\b[0]\s[3]%(big)%(big)HEY!"
 	"\0\b[0]\s[4]%(big)%(big)%(big)HEY!!!"
 	"\0\b[0]\s[1]PET ME.\e:chain=end"
+}}CHAIN
+
+flamingosong
+{{CHAIN
+	"\0\b[0]\s[0]I LOVE TO SING-O %(emoji)"
+	"\0\b[0]\s[0]LET ME TAKE YOU UNDER MY WING-O %(emoji)"
+	"\0\b[0]\s[0]FOR I AM THE KING-O %(emoji)"
+	"\0\b[0]\s[0]AND THIS IS MY FLAMINGO SONG %(emoji)\e:chain=end"
+}}CHAIN
+
+lookatme
+{{CHAIN
+"\0\b[0]\s[0]DON'T LOOK AT ME."
+"\0\b[0]\s[4]%(big)LOOK AT ME!"
+"\0\b[0]\s[0]%(small)DON'T LOOK AT ME."
+"\0\b[0]\s[4]%(big)%(big)LOOK AT ME!!"
+"\0\b[0]\s[0]%(small)%(small)DON'T LOOK AT ME."
+"\0\b[0]\s[4]%(big)%(big)%(big)LOOK AT ME!!!\e:chain=end"
 }}CHAIN
 
 OnMentionedFlamingoDay
