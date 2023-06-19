@@ -17,6 +17,8 @@ MaxAngryTalk : nonoverlap_pool
 {
 	"\0\s[1]AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	"\0\s[4]I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(small)MUSIC."
+	"\0\s[4]I'M GONNA TREAT YOUR FINGERS LIKE SHRIMP."
+	"\0\s[1]I'M STEPPING ON YOU, I'M STOMPING ON YOU, I'M SQUASHING YOU FLAT."
 }
 
 MidAngryTalk : nonoverlap_pool
@@ -25,6 +27,10 @@ MidAngryTalk : nonoverlap_pool
 	"\0\s[1]I BET YOU WISH YOU HAD %(flampart) LIKE THIS."
 	"\0\s[1]GOT ANY GAMES ON YOUR PHONE?"
 	"\0\s[1]IT'S TOO %(climate) IN HERE!"
+	"\0\s[0]BEING ABLE TO CLOSE YOUR MOUTH IS A DESIGN FLAW."
+	"\0\s[0]I'M SO BURPY."
+	"\0\s[4]GET A TATTOO OF MY FACE."
+	"\0\s[0]DO YOU THINK I CAN PULL OFF A JEAN JACKET?"
 	
 	if !FlamingoDay && !MentionedFlamingoDay; "\0\s[1]WHAT DO YOU MEAN IT'S NOT FLAMINGO DAY\![raise,OnMentionedFlamingoDay]"
 	
