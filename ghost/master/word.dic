@@ -11,28 +11,43 @@ flamingonoises
 
 flamfood
 {
-	"SHRIMP"
-	"SHRIMP %(shrimpfood)"
-	"ALGAE"
-	"%(algaecolor) ALGAE"
-	"PLANKTON"
-	"KELP"
+	
 }
 
-shrimpfood
+
+//—————————————————————————————— Formatting ——————————————————————————————
+
+big
 {
-	"CHIPS"
-	"CRACKERS"
-	"CAKES"
+	"\f[height,+2]"
 }
 
-algaecolor
+small
 {
-	"RED"
-	"GOLD"
-	"BROWN"
-	"BLACK"
-	"GREEN"
-	"BLUE"
-	"BLUE-GREEN"
+	"\f[height,-2]"
+}
+
+regsize
+{
+	"\f[height,default]"
+}
+
+bold
+{
+	"\f[bold,1]"
+}
+
+boldoff
+{
+	"\f[bold,default]"
+}
+
+italic
+{
+	"\f[italic,1]"
+}
+
+italicoff
+{
+	"\f[italic,default]"
 }
