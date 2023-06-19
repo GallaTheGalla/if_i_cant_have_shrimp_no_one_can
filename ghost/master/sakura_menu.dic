@@ -54,7 +54,7 @@ OnTrash
 
 OnCalendar
 {
-	"\0\b[4]\s[3]WHY WOULD I CARE WHAT YOUR SCHEDULE IS LIKE!? YOUR SCHEDULE IS YOUR BUSINESS, MY SCHEDULE IS MY BUSINESS."
+	"\0\b[0]\s[3]WHY WOULD I CARE WHAT YOUR SCHEDULE IS LIKE!? YOUR SCHEDULE IS YOUR BUSINESS, MY SCHEDULE IS MY BUSINESS."
 }
 
 OnWeather
@@ -74,7 +74,7 @@ OnChangeColors
 
 OnTalkRate
 {
-	"\0\b[2]\s[3]YOU DON'T %(bold)GET%(boldoff) TO TELL %(bold)ME%(boldoff) WHEN TO TALK!"
+	"\0\b[0]\s[3]YOU DON'T %(bold)GET%(boldoff) TO TELL %(bold)ME%(boldoff) WHEN TO TALK!"
 }
 
 OnNevermind

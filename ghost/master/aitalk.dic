@@ -47,7 +47,27 @@ MaxAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[3]STOP MAKING THAT AWFUL NOISE"
 	"\0\b[0]\s[1]WHAT A DUMP."
 	"\0\b[0]\s[1]THERE MUST BE SOME EXPLANATION FOR THIS BEHAVIOR. \w8\w8\w8\s[4]CERTAINLY NOT A GOOD ONE."
-	"\0\b[0]\s[0]%(big)HEY%(small) DID YOU %(big)KNOW%(small) THAT %(big)SOMEONE%(small) IS %(big)WAITING ON YOU???"
+	"\0\b[0]\s[1]%(big)HEY%(small) DID YOU %(big)KNOW%(small) THAT %(big)SOMEONE%(small) IS %(big)WAITING ON YOU???"
+	"\0\b[0]\s[0]YOU. \w8\w8\n%(big)YOU. \w8\w8\n%(big)YOU. \w8\w8\s[1]\n%(big)YOU. \w8\w8\n%(big)YOU. \w8\w8\n%(big)YOU. \w8\w8\s[3]\n%(big)YOU. \w8\w8\n%(big)YOU. \w8\w8\n%(big)YOU. \w8\w8\s[4]\n%(big)HEY!!!"
+	"\0\b[0]\s[4]%(big)%(big)%(big)%(big)%(big)%(big)IT'S %(flamfood('my')) TIME"
+	"\0\b[0]\s[4]%(big)%(big)%(big)%(big)%(big)%(big)HEY YOU, GET TO IT"
+	"\0\b[0]\s[4]YOU HAVE BAD TASTE"
+	"\0\b[0]\s[4]I HOPE YOU STEP ON YOUR FAVORITE POOL TOY"
+	"\0\b[0]\s[0]YOU KEEP LEAVING CRUMBS EVERYWHERE. \s[1]FLECKS OF HEAVENLY SNACKS, NEVER TO BE CONSUMED. \s[3]WASTED POTENTIAL. \s[4]%(big)A TRAGIC TALE OF NEGLECT AND SLOTH."
+	"\0\b[0]\s[4]INVADES YOUR PERSONAL SPACE"
+	"\0\b[0]\s[4]I CAN'T BELIEVE I HAVE TO STARE AT THIS FACE"
+	"\0\b[0]\s[1]STOMP STOMP STOMP STOMP."
+	"\0\b[0]\s[1]I'M GONNA STAB YOU WITH MY BEAK"
+	"\0\b[0]\s[3]WHAT'S THAT YOU'RE EATING? \w8\w8\s[4]%(shrimpfood)? \w8\w8\w8\s[1]AND EXACTLY WHEN WERE YOU PLANNING TO SHARE?"
+	"\0\b[0]\s[3]YOU'LL NEVER HAVE %(flampart) LIKE MINE IF YOU DON'T TRY A LITTLE HARDER"
+	"\0\b[0]\s[1]%(small)%(small)YOU WILL REGRET THIS."
+	"\0\b[0]\s[1]%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)%(big)\![set,balloonwait,7]PET ME."
+	"\0\b[0]\s[4]STOP LOOKING OVER THERE, LOOK OVER HERE. %(big)THIS IS WHAT'S IMPORTANT. \w8\w8\n%(big)%(big)%(bold)THIS IS WHAT YOUR ATTENTION SHOULD BE ON AT ALL TIMES."
+	"\0\b[0]\s[1]STEPS ON THE FLOWERS"
+	"\0\b[0]\s[0]STANDS PERFECTLY STILL. \s[1] OBSERVES YOUR INACTION. \w8\s[4]STARES INTO YOUR SOUL."
+	"\0\b[0]\s[4]YOU MAKE ME WANT TO EAT GLUE THAT ISN'T EVEN %(flamfood('my')) FLAVORED."
+	"\0\b[0]\s[1]WE SHOULD BEND YOUR LEGS LIKE MINE"
+	"\0\b[0]\s[4]KNOCK KNOCK, IT'S A HUNGRY BIRD"
 }
 
 MidAngryTalk : nonoverlap_pool
@@ -76,6 +96,21 @@ MidAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[0]ALWAYS KNOW WHERE YOU CAN FIND MORE SHRIMP"
 	"\0\b[0]\s[1]WELL THAT'S JUST GREAT, THIS PLACE IS TOO %(climate) TO ENJOY MY %(flamfood('my'))"
 	"\0\b[0]\s[0]I GOT A SPORTY NEW CAR. %(flamcolor). \w8\s[1]JEALOUS, AREN'T YOU? \w8\w8WELL IT'S \s[4]%(big)MINE"
+	"\0\b[0]\s[0]YOUR SENSE OF STYLE COULD USE WORK. TRY SOME %(flamcolor)."
+	"\0\b[0]\s[0]STRUTTING IS IMPORTANT, YOU NEED TO WORK ON YOUR FORM"
+	"\0\b[0]\s[1]BE MORE COLORFUL"
+	"\0\b[0]\s[0]YOU NEED %(flampart). THAT'S WHAT YOU'RE MISSING."
+	"\0\b[0]\s[0]TAKE A DEEP BREATH. SMELL THAT? \w8\w8IT'S A LACK OF %(flamfood('my')). \w8\w8\w8\w8\s[1]FIX THAT."
+	"\0\b[0]\s[0]PICKLES YOU."
+	"\0\b[0]\s[0]IT'S %(climate) IN HERE. \w8\w8\s[1]FIX THAT."
+	"\0\b[0]\s[0]I BET YOU'D BE GREAT AT %(profession), IT'S THE PERFECT JOB FOR SOMEONE LIKE YOU."
+	"\0\b[0]\s[0]HMMMMMM. \s[1]YOU EXIST, I'LL GIVE YOU THAT."
+	"\0\b[0]\s[1]CAN YOU AT LEAST JUGGLE?"
+	"\0\b[0]\s[1]%(bold)NO%(boldoff) I DON'T SWIM, I'M A %(bold)WADING BIRD."
+	"\0\b[0]\s[0]GIVE ME ICE WATER SO I CAN BOBBLE IN IT LIKE A DUCK"
+	"\0\b[0]\s[0]WHAT ARE YOU GONNA DO? \s[1]ROLL AROUND IN THE GRASS OR SOMETHING?"
+	"\0\b[0]\s[0]BRING ME %(flamfood), \s[1]AND NOT THE DISCOUNT KIND"
+	
 	
 	if !FlamingoDay && !MentionedFlamingoDay; "\0\b[0]\s[1]WHAT DO YOU MEAN IT'S NOT FLAMINGO DAY\![raise,OnMentionedFlamingoDay]"
 	
@@ -87,9 +122,10 @@ MidAngryTalk : nonoverlap_pool
 
 MinAngryTalk : nonoverlap_pool
 {
-	"\0\b[0]\s[2]If roses are red,\nand violets are blue,\nwhat color am i\nafter being spoiled by you?"
+	"\0\b[0]\s[2]If roses are red,\nand violets are blue,\nwhat color am I\nafter being spoiled by you?"
 	"\0\b[0]\s[2]There are limitless things to say about the color pink,\nthough few capture the totality of its splendor.\nIn a word, it is life\nthe hope\nthe reward\nthat comes when you've finally put thought to ink.\nA fire that heals,\na gently held wish\nspoken just when you feel you'd best surrender.\nThink not of the color,\nbut of the soul,\nof the art,\nof the love\nfor the color pink."
 	"\0\b[0]\s[2]There was a flamingo that glugs\nendlessly out of its mugs\ntil it had a fright\nand caused quite the sight\nfor what it had spilled was bugs!"
+	"\0\b[0]\s[2]Beloved is the hand\nthat feeds a sweet little bird\naccording to its demand."
 }
 
 
