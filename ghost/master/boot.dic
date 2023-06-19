@@ -3,21 +3,24 @@ OnFirstBoot
 	stroke = 0
 	LastTalk = ""
 	aitalkinterval = 180
+	BalloonColor = 0
 	
 	"\1\s[-1]\![raise,OnFirstBoot.Talk]"
 }
 
 OnFirstBoot.Talk
 {
-	"\0\s[4]SHRIMP CHIPS NOW."
-	"\0\s[0]AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(small)%(small)%(small)%(small)AAAAAAAAAAAAAAAAAAAAA"
-	"\0\s[1]WHO DO YOU THINK YOU ARE, WALKING IN HERE LIKE YOU OWN THE PLACE!? YOU DON'T! I DO! THIS IS MY PLACE!"
-	"\0\s[0]DON'T EVEN THINK ABOUT TOUCHING MY FEET, YOU FOOT TOUCHER."
+	"\0\b[0]\s[4]SHRIMP CHIPS NOW."
+	"\0\b[0]\s[0]AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(small)%(small)%(small)%(small)AAAAAAAAAAAAAAAAAAAAA"
+	"\0\b[0]\s[1]WHO DO YOU THINK YOU ARE, WALKING IN HERE LIKE YOU OWN THE PLACE!? YOU DON'T! I DO! THIS IS MY PLACE!"
+	"\0\b[0]\s[0]DON'T EVEN THINK ABOUT TOUCHING MY FEET, YOU FOOT TOUCHER."
 }
 
 OnInitialize
 {
+	if !ISVAR("BalloonColor"); BalloonColor = 0
 	MentionedFlamingoDay = 0
+	
 	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
 	{
 		LastTalk = ""
@@ -27,7 +30,7 @@ OnInitialize
 
 OnBoot
 {
-	"\1\s[-1]\0\s[0]"
+	"\1\s[-1]\0\b[0]\s[0]"
 	--
 	if FlamingoDay
 	{
@@ -44,10 +47,10 @@ OnBoot
 
 OnClose
 {
-	"\0\s[0]BYE."
-	"\0\s[1]FINALLY."
-	"\0\s[0]I'VE DREAMED OF THIS MOMENT."
-	"\0\s[0]LEAVE? \s[3]%(big)LEAVE!? \s[4]%(big)YOU CAN'T MAKE ME LEAVE, I MAKE ME LEAVE!"
+	"\0\b[0]\s[0]BYE."
+	"\0\b[0]\s[1]FINALLY."
+	"\0\b[0]\s[0]I'VE DREAMED OF THIS MOMENT."
+	"\0\b[0]\s[0]LEAVE? \s[3]%(big)LEAVE!? \s[4]%(big)YOU CAN'T MAKE ME LEAVE, I MAKE ME LEAVE!"
 	--
 	"\w8\w8\-"
 }

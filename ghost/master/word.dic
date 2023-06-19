@@ -1,6 +1,13 @@
 emoji
 {
-	
+	"\_b[img/"
+	--
+	"flamingo"
+	"flamingostand"
+	"pineapple"
+	"shrimp"
+	--
+	".png,inline,--option=use_self_alpha]"
 }
 
 flamingonoises : nonoverlap
@@ -25,11 +32,10 @@ flamingonoises : nonoverlap
 	"TRANCENDS REALITY"
 }
 
-flamfood
+flamfood : pool
 {
 	"SHRIMP"
 	"SHRIMP %(shrimpfood)"
-	"A TWENTY SHRIMP BUFFET"
 	"ALGAE"
 	"%(algaecolor) ALGAE"
 	"PLANKTON"
@@ -59,9 +65,15 @@ flamfood
 	"FISH FLAVORED WORMS"
 	"GRASSHOPPERS"
 	"STICK BUGS"
-	"A THOUSAND FRUIT FLIES"
 	"BUG SALAD"
 	"INSECT LEGS"
+	
+	if _argv[0] != "my"
+	{
+		"A TWENTY SHRIMP BUFFET"
+		"A THOUSAND FRUIT FLIES"
+		"A COLLECTION OF %(RangeRand(15,120)) DIFFERENT SPECIES OF %(insect)"
+	}
 }
 
 flampart
@@ -75,6 +87,7 @@ flampart
 	"KNEES"
 	"FEATHERS"
 	"A NECK"
+	"WEBBED FEET"
 	"DAZZLING BEAUTY"
 	"IMPECCABLE TASTE"
 	"A FLAWLESS COMPLEXION"
@@ -210,19 +223,53 @@ climate
 	"SPRING-HAS-SPRUNG"
 }
 
+suefor
+{
+	"FALSE ADVERTISING"
+	"LYING TO WATERFOWL"
+	"REFUSING TO ADMINISTER LIFE-SAVING SERVICES"
+	"GRAND THEFT %(flamfood)"
+	"HAVING TERRIBLE MUSIC TASTE"
+	"INSUFFICIENT FEATHER ADMIRATION"
+	"IGNORANCE OF FLAMINGO NEEDS"
+	"FAILURE TO OBSERVE PROPER FLAMINGO-PRAISING TRADITIONS"
+	"STEPPING IN %(flamfood)"
+	"ALLOWING THIS SPACE TO BECOME %(climate)"
+	"NOT STANDING ON ONE LEG AT ALL TIMES"
+	"CONSUMPTION OF %(flamfood)"
+	"LACK OF SHRIMP"
+	"TOO MANY CATS"
+	"TRAPPING ME INTO BORING CONVERSATION"
+	"NOT HAVING BANDAGES WHEN I NEED THEM"
+	"HAVING TOO MUCH JUICE IN THE FRIDGE"
+	"DYING IN THAT VIDEO GAME AGAIN"
+	"LACK OF NESTING SPACE"
+}
 
+paint
+{
+	TOUPPER(CurrentColor)
+}
 
+insect
+{
+	"BUTTERFLY"
+	"ANT"
+	"BEETLE"
+	"WORM"
+	"FLY"
+}
 
 //—————————————————————————————— Formatting ——————————————————————————————
 
 big
 {
-	"\f[height,+2]"
+	"\f[height,+3]"
 }
 
 small
 {
-	"\f[height,-2]"
+	"\f[height,-3]"
 }
 
 regsize

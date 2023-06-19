@@ -2,7 +2,7 @@
 //Starting an update
 OnUpdateBegin
 {
-	"\0%(idle)Checking for updates.\w8"
+	"\0\b[0]%(idle)Checking for updates.\w8"
 }
 
 //reference0 is the number of new files, starting from 0
@@ -13,7 +13,7 @@ OnUpdateReady
 	//plural checks, adds an s and changes is to are if there's more than 1 file
 	_s = ""; _are = "is"; if reference0 != 1; _s = "s"; _are = "are"
 	
-	"\0%(idle)There %(_are) %(reference0) new file%(_s).\w8"
+	"\0\b[0]%(idle)There %(_are) %(reference0) new file%(_s).\w8"
 }
 
 //When the update finishes. Don't forget to initialize any new variables you've created! I highly highly recommend using OnInitialize for this (it's in boot.dic), in case the user updates via the ghost explorer or some other means.
@@ -22,11 +22,11 @@ OnUpdateComplete
 {
 	if reference0 == "none"
 	{
-		"\0%(idle)There are no new files."
+		"\0\b[0]%(idle)There are no new files."
 	}
 	else
 	{
-		"\0%(idle)Update complete."
+		"\0\b[0]%(idle)Update complete."
 	}
 }
 
@@ -35,20 +35,20 @@ OnUpdateFailure //If the update fails
 {
 	if reference0 == "timeout" //If it timed out
 	{
-		"\0%(idle)Connection timed out."
+		"\0\b[0]%(idle)Connection timed out."
 	}
 	elseif reference0 == "md5 miss" //If the update files have not been uploaded correctly and don't match the updates2.dau
 	{
 		_file = SPLITPATH(reference1)[2] + SPLITPATH(reference1)[3] //This gets the name and extension of the offending file
 		
-		"\0%(idle)The MD5 values don't match.\w8 Contact the ghost author and let them know that '%(_file)' is giving an MD5 error."
+		"\0\b[0]%(idle)The MD5 values don't match.\w8 Contact the ghost author and let them know that '%(_file)' is giving an MD5 error."
 	}
 	elseif reference0 == "artificial" //If the user cancels the update by double clicking the balloon
 	{
-		"\0%(idle)Update cancelled."
+		"\0\b[0]%(idle)Update cancelled."
 	}
 	else //Any other errors
 	{
-		"\0%(idle)Error while updating:\w4 ""%(reference0)""."
+		"\0\b[0]%(idle)Error while updating:\w4 ""%(reference0)""."
 	}
 }
