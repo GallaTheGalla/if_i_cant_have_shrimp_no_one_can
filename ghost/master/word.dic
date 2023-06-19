@@ -3,7 +3,7 @@ emoji
 	
 }
 
-flamingonoises
+flamingonoises : nonoverlap
 {
 	"FLAMINGO NOISES"
 	"RUFFLES FEATHERS"
@@ -162,7 +162,7 @@ climate
 	"MILD"
 	"COMFORTABLE"
 	"WET"
-	"DAMN"
+	"DAMP"
 	"DRY"
 	"SANDY"
 	"MUDDY"
