@@ -3,3 +3,5 @@ type,ghost
 
 name,If I Can't Have Shrimp No One Can
 directory,if_i_cant_have_shrimp_no_one_can_ggz
+
+balloon.directory,tropical_plastic

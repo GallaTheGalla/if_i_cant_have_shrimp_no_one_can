@@ -14,3 +14,5 @@ icon,icon.ico
 
 sstp.allowunspecifiedsend,0
 kero.seriko.defaultsurface,9
+
+balloon,Tropical Plastic
