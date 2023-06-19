@@ -47,6 +47,19 @@ flamfood
 	
 }
 
+flampart
+{
+	"WINGS"
+	"A BEAK"
+	"LEGS"
+	"A TAIL"
+	"EYES"
+	"EYEBROWS"
+	"KNEES"
+	"FEATHERS"
+	"A NECK"
+}
+
 shrimpfood
 {
 	"CHIPS"
@@ -55,6 +68,7 @@ shrimpfood
 	"SAUCE"
 	"LEGS"
 	"SALAD"
+	"SOUP"
 	"STEW"
 	"SEASONING"
 	"TAILS"
@@ -69,6 +83,25 @@ algaecolor
 	"GREEN"
 	"BLUE"
 	"BLUE-GREEN"
+}
+
+climate
+{
+	"HOT"
+	"COLD"
+	"FREEZING"
+	"BOILING"
+	"MILD"
+	"COMFORTABLE"
+	"WET"
+	"DAMN"
+	"DRY"
+	"SANDY"
+	"MUDDY"
+	"DIRTY"
+	"CLEAN"
+	"FOGGY"
+	"SUNNY"
 }
 
 

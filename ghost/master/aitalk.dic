@@ -22,6 +22,10 @@ MaxAngryTalk : nonoverlap_pool
 MidAngryTalk : nonoverlap_pool
 {
 	"EATS %(flamfood). \n\nNO, YOU CAN'T HAVE ANY!"
+	"I BET YOU WISH YOU HAD %(flampart) LIKE THIS."
+	"GOT ANY GAMES ON YOUR PHONE?"
+	"IT'S TOO %(climate) IN HERE!"
+	
 	"ONE FEATHER.\e:chain=feathercounting"
 	"HEY.\e:chain=attentionseeking"
 }
