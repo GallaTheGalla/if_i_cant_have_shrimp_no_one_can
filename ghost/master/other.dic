@@ -80,12 +80,19 @@ angrylevel
 	else; "min"
 }
 
+FlamingoDay
+{
+	month == 6 && day == 23
+}
+
 OnMinuteChange
 {
 	aitalkinterval -= 30
 	
 	if aitalkinterval < 30; aitalkinterval = 30
 }
+
+
 
 
 //—————————————————————————————— Right click menu links ——————————————————————————————

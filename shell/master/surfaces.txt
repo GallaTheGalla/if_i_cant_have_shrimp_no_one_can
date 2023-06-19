@@ -7,34 +7,108 @@ descript
 
 surface0
 {
-	collision,0,0,130,65,head
+	collisionex0,head,region,collision0.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,overlay,0,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,10,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,overlay,20,0,0,0
+	
+	animation103.interval,bind
+	animation103.pattern0,overlay,30,0,0,0
+	
+	animation104.interval,bind
+	animation104.pattern0,overlay,40,0,0,0
 }
 
 surface1
 {
-	collision,0,0,130,65,head
+	collisionex0,head,region,collision1.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,overlay,1,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,11,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,overlay,21,0,0,0
+	
+	animation103.interval,bind
+	animation103.pattern0,overlay,31,0,0,0
+	
+	animation104.interval,bind
+	animation104.pattern0,overlay,41,0,0,0
 }
 
 surface2
 {
-	collision,0,0,130,65,head
+	collisionex0,head,region,collision2.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,overlay,2,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,12,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,overlay,22,0,0,0
+	
+	animation103.interval,bind
+	animation103.pattern0,overlay,32,0,0,0
+	
+	animation104.interval,bind
+	animation104.pattern0,overlay,42,0,0,0
 }
-
 
 surface3
 {
-	collision,0,0,130,65,head
+	collisionex0,head,region,collision3.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,overlay,3,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,13,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,overlay,23,0,0,0
+	
+	animation103.interval,bind
+	animation103.pattern0,overlay,33,0,0,0
+	
+	animation104.interval,bind
+	animation104.pattern0,overlay,43,0,0,0
 }
 
 surface4
 {
-	collision,0,0,130,65,head
+	collisionex0,head,region,collision4.png,161,0,255
+	
+	animation100.interval,bind
+	animation100.pattern0,overlay,4,0,0,0
+	
+	animation101.interval,bind
+	animation101.pattern0,overlay,14,0,0,0
+	
+	animation102.interval,bind
+	animation102.pattern0,overlay,24,0,0,0
+	
+	animation103.interval,bind
+	animation103.pattern0,overlay,34,0,0,0
+	
+	animation104.interval,bind
+	animation104.pattern0,overlay,44,0,0,0
 }
 
 
 //—————————————————————————————— Kero surfaces ——————————————————————————————
 
-surface10
+surface9
 {
 	
 }

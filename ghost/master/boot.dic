@@ -10,13 +10,14 @@ OnFirstBoot
 OnFirstBoot.Talk
 {
 	"\0\s[4]SHRIMP CHIPS NOW."
-	"\0\s[0]AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(regsize)%(small)%(small)AAAAAAAAAAAAAAAAAAAAA"
+	"\0\s[0]AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(big)AAAAAAAAAAAAAAAAAAAAA%(small)%(small)%(small)%(small)AAAAAAAAAAAAAAAAAAAAA"
 	"\0\s[1]WHO DO YOU THINK YOU ARE, WALKING IN HERE LIKE YOU OWN THE PLACE!? YOU DON'T! I DO! THIS IS MY PLACE!"
 	"\0\s[0]DON'T EVEN THINK ABOUT TOUCHING MY FEET, YOU FOOT TOUCHER."
 }
 
 OnInitialize
-{	
+{
+	MentionedFlamingoDay = 0
 	if reference0 != "reload" //For things you want to reset EXCEPT when just reloading; a convenience for you the dev, basically
 	{
 		LastTalk = ""
@@ -28,10 +29,17 @@ OnBoot
 {
 	"\1\s[-1]\0\s[0]"
 	--
-	"WHERE ARE MY SHRIMP CHIPS!?"
-	"NOT THIS AGAIN."
-	"OH, YUCK."
-	"WHO ARE YOU AGAIN?"
+	if FlamingoDay
+	{
+		"\s[2]IT'S FLAMINGO DAY!!!"
+	}
+	else
+	{
+		"WHERE ARE MY SHRIMP CHIPS!?"
+		"NOT THIS AGAIN."
+		"OH, YUCK."
+		"WHO ARE YOU AGAIN?"
+	}
 }
 
 OnClose

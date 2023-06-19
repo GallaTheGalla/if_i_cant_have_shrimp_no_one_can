@@ -12,3 +12,11 @@ group,Mean Flamingo
 	3,Lean
 	4,Close
 }
+
+group,__disabled
+{
+	9,__parts
+	10,__parts
+	11,__parts
+	20,__parts
+}
