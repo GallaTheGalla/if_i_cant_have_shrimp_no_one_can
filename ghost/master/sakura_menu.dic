@@ -8,14 +8,11 @@ OnSakuraMenu : all
 	if LastTalk != ""; "  \![*]\q[Say that again,OnLastTalk]"
 	"\n\n"
 	
-	"\![*]\q[Empty my recycle bin,OnTrash]\n"
-	"\![*]\q[Open my calendar,OnCalendar]\n"
-	"\![*]\q[Check the weather,OnWeather]\n"
-	"\![*]\q[Send a bug report,OnBugReport]\n"
+	"\![*]\q[Empty my recycle bin,OnTrash]  \![*]\q[Open my calendar,OnCalendar]\n"
+	"\![*]\q[Check the weather,OnWeather]  \![*]\q[Send a bug report,OnBugReport]\n"
 	"\n"
 	
-	"\![*]\q[Change colors,OnChangeColors]\n"
-	"\![*]\q[Change talk rate,OnTalkRate]\n"
+	"\![*]\q[Change colors,OnChangeColors]  \![*]\q[Change talk rate,OnTalkRate]\n"
 	"\n"
 	
 	"\![*]\q[Nevermind,OnNevermind]"
@@ -88,7 +85,7 @@ OnNevermind
 OnBalloonMenu : all
 {
 	if reference0 != ""; BalloonColor = reference0
-	_balloons = ("Pink,0","Black,1","White,2")
+	_balloons = ("Pink,0","White,1","Black,2","Blue,3","Purple,4")
 	
 	"\C\![lock,balloonrepaint]\c\0\b[0]%(idle)\![set,autoscroll,disable]\_q"
 	

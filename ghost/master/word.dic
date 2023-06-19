@@ -72,7 +72,7 @@ flamfood : pool
 	{
 		"A TWENTY SHRIMP BUFFET"
 		"A THOUSAND FRUIT FLIES"
-		"A COLLECTION OF %(RAND(90) + 20) DIFFERENT SPECIES OF %(insect)"
+		"A COLLECTION OF %(RangeRand(15,120)) DIFFERENT SPECIES OF %(insect)"
 	}
 }
 

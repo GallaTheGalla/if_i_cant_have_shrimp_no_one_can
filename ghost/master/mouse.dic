@@ -27,7 +27,7 @@ OnRandomizeColors
 	
 	if DefaultBalloon
 	{
-		_balloons = (0,1,2)
+		_balloons = (0,1,2,3,4)
 		_currentballoon = BalloonColor
 		_newballoon = _currentballoon
 		while _newballoon == _currentballoon

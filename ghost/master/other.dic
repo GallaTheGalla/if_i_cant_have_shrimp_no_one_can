@@ -118,6 +118,38 @@ DefaultBalloon
 	SHIORI3FW.BalloonName == "Tropical Plastic"
 }
 
+RangeRand
+{
+	if _argv[0] == "" || _argv[1] == ""; {return}
+	
+	_num = _argv[0]
+	_randamt = _argv[1] + 1
+	if _argv[2] == "exclusive"; _randamt--
+	
+	_randamt -= _num //Adjust how much the RAND function will output based on the lowest value
+	
+	_num += RAND(_randamt)
+	_num
+}
+
+
+
+
+
+On_tamaOpen
+{
+	SETTAMAHWND(reference[0])
+	SHIORI3FW.Push_X_SSTP_PassThru('Title','GIVE ME BUGS TO EAT')
+	SHIORI3FW.Push_X_SSTP_PassThru('border.color','626262')
+	SHIORI3FW.Push_X_SSTP_PassThru('background.color','EC5B5A')
+	SHIORI3FW.Push_X_SSTP_PassThru('default.color','000000')
+}
+
+On_tamaExit
+{
+	SETTAMAHWND(0)
+}
+
 
 //—————————————————————————————— Right click menu links ——————————————————————————————
 
