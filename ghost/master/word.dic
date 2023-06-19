@@ -8,3 +8,31 @@ flamingonoises
 	"FLAMINGO NOISES"
 	"AAAAAAAAAAAAAAAAAAAAA"
 }
+
+flamfood
+{
+	"SHRIMP"
+	"SHRIMP %(shrimpfood)"
+	"ALGAE"
+	"%(algaecolor) ALGAE"
+	"PLANKTON"
+	"KELP"
+}
+
+shrimpfood
+{
+	"CHIPS"
+	"CRACKERS"
+	"CAKES"
+}
+
+algaecolor
+{
+	"RED"
+	"GOLD"
+	"BROWN"
+	"BLACK"
+	"GREEN"
+	"BLUE"
+	"BLUE-GREEN"
+}

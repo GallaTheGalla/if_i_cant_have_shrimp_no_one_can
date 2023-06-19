@@ -20,7 +20,7 @@ MaxAngryTalk : nonoverlap_pool
 
 MidAngryTalk : nonoverlap_pool
 {
-	"mid angry"
+	"EATS %(flamfood). \n\nNO, YOU CAN'T HAVE ANY!"
 }
 
 MinAngryTalk : nonoverlap_pool
