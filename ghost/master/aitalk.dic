@@ -16,14 +16,36 @@ OnAiTalk
 MaxAngryTalk : nonoverlap_pool
 {
 	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+	"I DON'T LIKE MUSIC, BUT I ESPECIALLY DON'T LIKE %(big)YOUR %(regsize)MUSIC."
 }
 
 MidAngryTalk : nonoverlap_pool
 {
 	"EATS %(flamfood). \n\nNO, YOU CAN'T HAVE ANY!"
+	"ONE FEATHER.\e:chain=feathercounting"
+	"HEY.\e:chain=attentionseeking"
 }
 
 MinAngryTalk : nonoverlap_pool
 {
 	"flamingo noises"
 }
+
+feathercounting
+{{CHAIN
+	"TWO FEATHERS."
+	"THREE FEATHERS."
+	"FOUR FEATHERS."
+	"FIVE FEATHERS."
+	"SIX FEATHERS."
+	"SEVEN FEATHERS."
+	"STOP LOOKING AT MY FEATHERS!\e:chain=end"
+}}CHAIN
+
+attentionseeking
+{{CHAIN
+	"\s[1]%(big)HEY."
+	"\s[3]%(big)%(big)HEY!"
+	"\s[4]%(big)%(big)%(big)HEY!!!"
+	"\s[1]PET ME.\e:chain=end"
+}}CHAIN
