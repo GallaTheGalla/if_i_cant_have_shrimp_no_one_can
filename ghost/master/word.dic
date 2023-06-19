@@ -11,8 +11,67 @@ flamingonoises
 
 flamfood
 {
+	"SHRIMP"
+	"SHRIMP %(shrimpfood)"
+	"A TWENTY SHRIMP BUFFET"
+	"ALGAE"
+	"%(algaecolor) ALGAE"
+	"PLANKTON"
+	"KELP"
+	
+	"SEEDS"
+	
+	"FISH"
+	"COD"
+	"SALTWATER TROUT"
+	"SALMON"
+	"KRILL"
+	"MINNOWS"
+	"GAFFTOPSAIL CATFISH"
+	"SARDINES"
+	"TUNA SANDWICHES"
+	"FISH WITHOUT THE CHIPS (THEY DIDN'T HAVE SHRIMP FLAVOR)"
+	"DOLPHIN"
+	
+	"BUGS"
+	"BEETLES"
+	"GRUBS"
+	"LOCUSTS"
+	"FISH FLAVORED WORMS"
+	"GRASSHOPPERS"
+	"STICK BUGS"
+	"A THOUSAND FRUIT FLIES"
+	"BUG SALAD"
+	"INSECT LEGS"
+
 	
 }
+
+shrimpfood
+{
+	"CHIPS"
+	"CRACKERS"
+	"CAKES"
+	"SAUCE"
+	"LEGS"
+	"SALAD"
+	"STEW"
+	"SEASONING"
+	"TAILS"
+}
+
+algaecolor
+{
+	"RED"
+	"GOLD"
+	"BROWN"
+	"BLACK"
+	"GREEN"
+	"BLUE"
+	"BLUE-GREEN"
+}
+
+
 
 
 //—————————————————————————————— Formatting ——————————————————————————————
