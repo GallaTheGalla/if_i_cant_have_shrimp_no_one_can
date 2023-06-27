@@ -1,6 +1,6 @@
 charset,OSNative
 file,developer_options.txteac1a05dccd7cd86b6b9aebbcad841cesize=84date=2023-06-19T06:05:34
-file,ghost/master/aitalk.dica27166ff70e2713e891694c8ebc4c87fsize=9534date=2023-06-19T17:31:57
+file,ghost/master/aitalk.dic97f92a31ef32cb0d5c06853d605aceb1size=9794date=2023-06-27T19:00:06
 file,ghost/master/boot.dicfc47e4c50537d001037c81b280fd9580size=1299date=2023-06-19T17:31:57
 file,ghost/master/descript.txt503dcaf6a7d5cd30f3495eeda074777csize=344date=2023-06-19T16:24:49
 file,ghost/master/emerg.dicc7cb6eacd3262003fef909c382a6fefesize=351date=2023-04-14T15:45:50
