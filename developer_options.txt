@@ -1,3 +1,5 @@
 .gitignore,nonar,noupdate
 .gitattributes,nonar,noupdate
 tropical_plastic/,noupdate
+shell/angrily_vibrating_flamingo_zi,nonar,noupdate
+shell/correctly_drawn_flamingo,nonar,noupdate
