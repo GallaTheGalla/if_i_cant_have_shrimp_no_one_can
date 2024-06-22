@@ -3,6 +3,7 @@ type,shell
 
 name,Halloween Flamingo
 craftman,Galehaut
+craftmanw,Galehaut
 craftmanurl,https://www.tumblr.com/blog/aegisghosts
 
 seriko.alignmenttodesktop,bottom
