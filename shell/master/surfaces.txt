@@ -1,6 +1,10 @@
 descript
 {
 	version,1
+	//satolist.palette.frame,100,100
+	//satolist.palette.offset,0,0
+	//satolist.palette.expand,0.50
+	
 }
 
 //—————————————————————————————— Sakura surfaces ——————————————————————————————
