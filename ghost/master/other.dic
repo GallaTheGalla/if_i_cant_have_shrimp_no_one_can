@@ -26,8 +26,6 @@ OnTranslate
 		_talk = REPLACE(_talk,"\0\b[4]","\0\b[%(BalloonColor)4]")
 	}
 	
-	//If you want to add anything to OnTranslate, like text replacement, I would put it after this point, generally. Just make sure it's before the TOSTR(_talk)
-	
 	TOSTR(_talk)
 }
 
@@ -197,4 +195,21 @@ On_kero.recommendsites
 recommendsites_kero : array
 {
 	"These labels can be anything you want";	"https://link.example.com/link/to/whatever/here/once/more/"
+}
+
+
+
+On_getaistateex : all
+{
+	switch reference0
+	{	
+		"%(OUTPUTNUM('MinAngryTalk')),%(OUTPUTNUM('MidAngryTalk')),%(OUTPUTNUM('MaxAngryTalk')),%(OUTPUTNUM('MinAngryTalk') + OUTPUTNUM('MidAngryTalk') + OUTPUTNUM('MaxAngryTalk'))" + C_BYTE1
+		//"" + C_BYTE1
+	}
+
+	switch reference0
+	{
+		"MinAngryTalk,MidAngryTalk,MaxAngryTalk,All"
+	}
+	
 }
