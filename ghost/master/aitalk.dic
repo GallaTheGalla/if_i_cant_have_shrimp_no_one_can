@@ -158,7 +158,7 @@ MidAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[0]I BET YOU'D BE GREAT AT %(profession), IT'S THE PERFECT JOB FOR SOMEONE LIKE YOU."
 	"\0\b[0]\s[0]HMMMMMM. \s[1]YOU EXIST, I'LL GIVE YOU THAT."
 	"\0\b[0]\s[1]CAN YOU AT LEAST JUGGLE?"
-	"\0\b[0]\s[1]%(bold)NO%(boldoff) I DON'T SWIM, I'M A %(bold)WADING BIRD."
+	"\0\b[0]\s[1]%(bold)YES%(boldoff) I CAN SWIM, %(bold)NO%(boldoff) I DON'T SWIM."
 	"\0\b[0]\s[0]GIVE ME ICE WATER SO I CAN BOBBLE IN IT LIKE A DUCK"
 	"\0\b[0]\s[0]WHAT ARE YOU GONNA DO? \s[1]ROLL AROUND IN THE GRASS OR SOMETHING?"
 	"\0\b[0]\s[0]BRING ME %(flamfood), \s[1]AND NOT THE DISCOUNT KIND"
@@ -193,14 +193,7 @@ MidAngryTalk : nonoverlap_pool
 	"\0\b[0]\s[0]%(small)%(small)OOH I'LL SHOW YOU"
 	"\0\b[0]\s[0]HAVE YOU SEEN MY KEYS AROUND HERE?"
 	"\0\b[0]\s[0]THIS PLACE NEEDS TO BE COMPLETELY REDECORATED, TOP TO BOTTOM"
-	_fancyflampart = flampart
-	if "A " _in_ _fancyflampart || "AN " _in_ _fancyflampart
-	{
-		_fancyflampart = REPLACE(_fancyflampart,"A ","A %(fabulous) ")
-		_fancyflampart = REPLACE(_fancyflampart,"AN ","A %(fabulous) ")
-	}
-	else; _fancyflampart = fabulous + " " + _fancyflampart
-	"\0\b[0]\s[1]YOU DON'T HAVE %(_fancyflampart) AND THAT'S A CRIME"
+	"\0\b[0]\s[1]YOU DON'T HAVE %(fancyflampart) AND THAT'S A CRIME"
 	"\0\b[0]\s[0]GOT BICEPS? \s[1]GOOD FOR YOU, NOW %(bold)SCRAM"
 	"\0\b[0]\s[0]I CAN'T STAY LONG I HAVE TO GO MODEL FOR A THOUSAND DIFFERENT MAGAZINE COVERS\n\n \w8\w8\w8\w8\w8\w8\s[1]NO YOU'RE NOT INVITED"
 	"\0\b[0]\s[0]IF YOU'RE NOT SOFT AND FLUFFY WHY EVEN EXIST"
