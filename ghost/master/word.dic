@@ -400,6 +400,19 @@ fabulous
 	"MAGNIFICENT"
 }
 
+fancyflampart
+{
+	_output = flampart
+	if "A " _in_ _output || "AN " _in_ _output
+	{
+		_output = REPLACE(_output,"A ","A %(fabulous) ")
+		_output = REPLACE(_output,"AN ","A %(fabulous) ")
+		if "A EXQUISITE" _in_ _output; _output = REPLACE(_output,"A EXQUISITE","AN EXQUISITE") //Bandaid patch cuz i'm low on time and brainpower today
+	}
+	else; _output = fabulous + " " + _output
+	_output
+}
+
 //—————————————————————————————— Formatting ——————————————————————————————
 
 big
