@@ -96,5 +96,5 @@ OnBalloonMenu : all
 	}
 	
 	"\n"
-	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Close,OnBlank]\![unlock,balloonrepaint]"
+	"\![*]\q[Back,OnSakuraMenu]  \![*]\q[Close,OnBlank]\n[0]\f[align,right]\f[color,disable]v%(ghostver)\f[color,default]\![unlock,balloonrepaint]"
 }
