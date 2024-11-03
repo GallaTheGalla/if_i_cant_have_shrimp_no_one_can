@@ -76,7 +76,7 @@ On_homeurl
 
 ghostver
 {
-	"1.1.0"
+	"1.1.1"
 }
 
 angrylevel
@@ -152,6 +152,33 @@ On_tamaExit
 	SETTAMAHWND(0)
 }
 
+
+
+
+OnSpectrePlugin.ConfirmCalibration
+{
+	"\![raiseplugin,Spectre,OnCustomCalibrationConfirm,normal,relieved,angry,--option=include]"
+}
+
+OnSpectrePlugin.Surface
+{
+	if reference0 == "normal"; "\s[0]"
+	elseif reference0 == "relieved"; "\s[2]"
+	elseif reference0 == "angry"; "\s[1]"
+}
+
+OnSpectrePlugin.Possession
+{
+	if RAND(4) == 0
+	{
+		"\0\b[0]\s[1]OH, GREAT, THIS PARTY'S HAUNTED. I'M SOOOOOO IN THE HALLOWEEN MOOD RIGHT NOW."
+		"\0\b[0]\s[1]WHATEVER THAT WAS, IT WAS \f[bold,1]YOUR\f[bold,default] FAULT."
+		"\0\b[0]\s[3]GET OUT OF MY HEAD"
+		"\0\b[0]\s[1]IS THIS SUPPOSED TO BE SCARY? IT'S NOT."
+		"\0\b[0]\s[4]HIRE AS MANY GHOSTS AS YOU WANT, I'M NOT LEAVING!!!"
+		"\0\b[0]\s[1]ONE DAY I'LL BE A GHOST AND I'LL HAUNT YOU SO GOOD"
+	}
+}
 
 //—————————————————————————————— Right click menu links ——————————————————————————————
 
